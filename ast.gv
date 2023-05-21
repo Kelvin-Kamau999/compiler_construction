@@ -1,0 +1,19 @@
+// Abstract Syntax Tree
+digraph {
+	1 [label=PROGRAM]
+	0 -> 1
+	2 [label=EXPRESSION_STATEMENT]
+	1 -> 2
+	3 [label=BINARY_EXPRESSION]
+	2 -> 3
+	4 [label="-"]
+	3 -> 4
+	5 [label=PRIMARY_EXPRESSION]
+	3 -> 5
+	6 [label=x]
+	5 -> 6
+	7 [label=PRIMARY_EXPRESSION]
+	3 -> 7
+	8 [label=278]
+	7 -> 8
+}
